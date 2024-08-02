@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA.IO</title>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 1.5rem;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #4CAF50;
+    border-radius: 4px;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #45a049;
+}
+
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Buscador en Tiempo Real usando Bing</h1>
+        <p>Despues que termines de escribir tendras que dar un click en el input
+        <p><input type="text" id="searchInput" placeholder="Busca algo..." autofocus>
+        <p>Hola bienvenido a esta pagina web donde encontraras varios links para ir a juegos y aplicaciones como por ejemplo:
+
+<p><li>Editor de codigo online
+<p><li>Un juego de plataformas
+<p><li>Un tres en raya
+<p><li>Un snake
+<p><li>Un bloc de notas
+<p><li>Una aplicacion de texto a voz
+<p><li>Un juego de esquivar obstaculos
+
+<p>Los links de las aplicacicones estaran abajo de la pagina
+
+<div class="link"><a href="https://drive.google.com/drive/folders/1qbe6MIWb9W-jlUvpeFJTHsmMnd57djtP?usp=drive_link">Bloc de notas</div>
+
+<p><div class="link1"><a href="https://drive.google.com/drive/folders/1axLNg7S107bUp22rGCc10QvwetTwNS-d?usp=drive_link">Editor online</div>
+
+<p><div class="link2"><a href="https://drive.google.com/drive/folders/1QWW0Vz9HqNI3DtzwzaCbqe2p_q9lojNV?usp=drive_link">Odissea sin fin</div>
+
+<p><div class="link3"><a href="https://drive.google.com/drive/folders/1kNUwSWlz5HRr4VxhM2goNJzFQ0IXAu0P?usp=drive_link">Plataforms-jumping</div>
+
+<p><div class="link4"><a href="https://drive.google.com/drive/folders/16JG9seymKzxBKkZC7C9kd-ZUVlF1kOGD?usp=drive_link">Snake</div>
+
+<p><div class="link5"><a href="https://drive.google.com/drive/folders/19CoqBa_Qb9Ym7vSH4L5oL8XpubFLYvm6?usp=drive_link">Texto a voz</div>
+
+<p><div class="link6"><a href="https://drive.google.com/drive/folders/1ZnEwY7VPyT8II2LyZOY7S0c1wcZqEnEg?usp=drive_link">Tres en raya</div>
+
+
+
+
+    </div>
+</body>
+</html>
+
+<script>
+
+document.getElementById('searchInput').addEventListener('click', function() {
+    const query = this.value;
+    if (query.length > 0) {
+        // Redirigir a la búsqueda de Brave
+        window.location.href = 'https://search.bing.com/search?q=' + encodeURIComponent(query);
+    }
+});
+
+
+</script>
